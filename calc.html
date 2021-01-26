@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SimpleCalculator</title>
+	<style>
+		body {
+			height: 200px;
+			width: 250px;
+			border: 0;
+			padding: 0;
+			margin:0;
+
+		}
+		#parent{
+			background-color: skyblue;
+			height: 200px;
+			width: 250px;
+			border: 0;
+			padding:0;
+			margin:0;
+			
+		}
+		#buttons{
+			width: 100%;
+			height: 100%;
+		}
+		#output{
+			background-color:white;
+			width:100%;
+			height: 40px;
+			padding:0;
+			border: 0;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<script src="calc.js"></script>
+	<div id="parent">
+	<form>
+		<table>
+		<tr><td colspan="4"><input type="text" name="output" id="output" disabled></td></tr>
+		<tr>
+			<td><input type="button" value='1' onclick="screen('1')" id="buttons"></td>
+			<td><input type="button" value='2' onclick="screen('2')" id="buttons"></td>
+			<td><input type="button" value='3' onclick="screen('3')" id="buttons"></td>
+			<td><input type="button" value='+' onclick="screen('+')" id="buttons"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value='4' onclick="screen('4')" id="buttons"></td>
+			<td><input type="button" value='5' onclick="screen('5')" id="buttons"></td>
+			<td><input type="button" value='6' onclick="screen('6')" id="buttons"></td>
+			<td><input type="button" value='-' onclick="screen('-')" id="buttons"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value='7' onclick="screen('7')" id="buttons"></td>
+			<td><input type="button" value='8' onclick="screen('8')" id="buttons"></td>
+			<td><input type="button" value='9' onclick="screen('9')" id="buttons"></td>
+			<td><input type="button" value='/' onclick="screen('/')" id="buttons"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" value='c' onclick="clearScr()" id="buttons"></td>
+			<td colspan="2"><input type="button" value='=' onclick="result()" id="buttons" ></td>
+			
+		</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>
